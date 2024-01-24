@@ -5,6 +5,7 @@ import CardComponent from "../components/card/CardComponent";
 import axios from "axios";
 import ModalVideo from "../components/modal/ModalVideo";
 import { useSearch } from "../context/SearchContext";
+import Carraousel from "../components/Carraousel/Carraousel";
 
 const Home = () => {
   const url = "https://api.themoviedb.org/3";
@@ -73,6 +74,9 @@ const Home = () => {
 
   return (
     <Layout>
+      <Box>
+        <Carraousel datas={datas} />
+      </Box>
       <Box
         sx={{
           padding: 2,
